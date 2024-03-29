@@ -1,10 +1,12 @@
-import java.util.List;
 
 public class Borrower {
-    private int id;
-    private String firstName;
-    private String lastName;
-    private List<Book> borrowedBooks;
+    private String name;
 
+    public Borrower(String name) {
+        this.name = name;
+    }
 
+    public String getName() {
+        return name;
+    }
 }
