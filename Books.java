@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class Books {
 
@@ -46,9 +45,22 @@ public class Books {
         isBorrowed = borrowed;
     }
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id + "\n" +
+                "title='" + title + "\n" +
+                "author='" + author + "\n" +
+                "isBorrowed=" + isBorrowed +
+                '}';
     }
+
+    public static void main(String[] args) {
+        Books book = new Books(27, "The Dark Truth", "Suly");
+
+        book.isBorrowed = true;
+        System.out.println(book.toString());
+    }
+
 }
 
