@@ -1,12 +1,12 @@
 
-public class Books {
+public class Book {
 
     private int id;
     private String title;
     private String author;
     private Boolean isBorrowed;
 
-    public Books(int id, String title, String author) {
+    public Book(int id, String title, String author) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -55,12 +55,12 @@ public class Books {
                 '}';
     }
 
-    public static void main(String[] args) {
-        Books book = new Books(27, "The Dark Truth", "Suly");
-
-        book.isBorrowed = true;
-        System.out.println(book.toString());
-    }
+//    public static void main(String[] args) {
+//        Book book = new Book(27, "The Dark Truth", "Suly");
+//
+//        book.isBorrowed = true;
+//        System.out.println(book.toString());
+//    }
 
 }
 
